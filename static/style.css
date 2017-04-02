@@ -1,0 +1,62 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    width: 100%;
+    font-size: 16pt;
+    font-family: Helvetica, sans-serif;
+}
+
+h3 {
+    margin: 5px;
+}
+
+#inbox {
+    width: calc(100% - 10px);
+    height: calc(100% - 150px);
+    border: 1px solid black;
+    overflow: auto;
+    margin: 5px;
+}
+
+.message {
+    padding: 10px;
+    width: 100%;
+}
+
+.message .name {
+    color: red;
+}
+
+.message .text {
+    word-wrap: break-word;
+}
+
+form {
+    padding: 5px;
+    height: 100px;
+    width: 100%;
+}
+
+form div {
+    height: 100%;
+    width: calc(100% - 160px);
+    float: left;
+}
+
+form div textarea {
+    width: 100%;
+    height: 100%;
+    font-size: 1em;
+}
+
+form button {
+    height: 100%;
+    width: 150px;
+    margin-left: 10px;
+    font-size: 1.4em;
+}

@@ -4,13 +4,14 @@
     <title>Chat</title>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/1.7.3/socket.io.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="/style.css" />
 </head>
 <body>
     <h3>There are <span id="count"></span> people connected!</h3>
-    <div id="messageBox"></div>
+    <div id="inbox"></div>
     <form>
-        <input id="msgBox" type="text" autocomplete="off" />
-        <button id="sendBtn">Send a message!</button>
+        <div><textarea id="msgBox" autocomplete="off"></textarea></div>
+        <button id="sendBtn">Send</button>
     </form>
     <script src="/chat.js"></script>
 </body>
