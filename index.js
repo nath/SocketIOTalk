@@ -11,6 +11,11 @@ io.on('connection', (socket) => {
     socket.on('disconnect', () => {
         console.log('user disconnected');
     });
+
+    socket.on('message', (msg) => {
+        console.log(msg);
+        socket.send('I got that message!');
+    });
 });
 
 server.listen(3000, () => {
