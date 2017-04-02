@@ -1,0 +1,21 @@
+{
+  "name": "socketiochat",
+  "version": "0.0.1",
+  "description": "Chat application built with Socket IO",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon --use-strict ."
+  },
+  "author": "Nath Tumlin <nath@nathtumlin.com> (https://nathtumlin.com)",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/nath/SocketIOTalk"
+  },
+  "devDependencies": {
+    "nodemon": "^1.11.0"
+  },
+  "dependencies": {
+    "express": "^4.15.2"
+  }
+}
