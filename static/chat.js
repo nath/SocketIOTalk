@@ -4,7 +4,7 @@ const messageBox = $('#messageBox');
 const msgBox = $('#msgBox');
 const name = prompt('What is your name?');
 
-$('#sendBtn').click(() => {
+$('form').submit(() => {
     const msgText = msgBox.val();
     if (msgText === '') {
         return;
@@ -17,6 +17,10 @@ $('#sendBtn').click(() => {
 
     addMessage(msg);
     socket.send(msg);
+
+    msgBox.val('');
+
+    return false;
 });
 
 
