@@ -27,3 +27,7 @@ function addMessage(msg) {
 socket.on('message', (msg) => {
     addMessage(msg);
 });
+
+socket.on('count', (count) => {
+    $('#count').text(count);
+});
