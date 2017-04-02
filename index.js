@@ -13,8 +13,8 @@ io.on('connection', (socket) => {
     });
 
     socket.on('message', (msg) => {
-        console.log(msg);
-        socket.send('I got that message!');
+        console.log(`${msg.name}: ${msg.text}`);
+        socket.broadcast.send(msg);
     });
 });
 
